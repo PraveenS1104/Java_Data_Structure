@@ -18,13 +18,14 @@ public class GraphList {
 		li.get(dest).add(src);
 	}
 	
-	public static void display() {
+	public static void print() {
 		for(int i=0;i<li.size();i++)
 		{
 			System.out.print(i+" ");
 			for(int j=0;j<li.get(i).size();j++) {
 				System.out.print(li.get(i).get(j)+" ");
 			}
+			System.out.println();
 			System.out.println();
 		}
 	}
@@ -38,7 +39,8 @@ public class GraphList {
 		addEdge(1,4);
 		addEdge(1,1);
 		addEdge(2,1);
-		display();
+		
+		print();
 		
 	}
 
